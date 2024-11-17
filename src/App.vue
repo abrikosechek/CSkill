@@ -5,6 +5,7 @@ import Header from './components/Header.vue';
 <template>
   <div class="page-wrapper">
     <Header />
+    <router-view />
   </div>
 </template>
 
