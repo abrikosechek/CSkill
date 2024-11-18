@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 
 import WeaponStatistics from "../pages/WeaponStatistics.vue";
 
@@ -7,7 +7,9 @@ const routes = [
   { path: "/weapon_statistics", component: WeaponStatistics },
 ];
 
-export default createRouter({
-  history: createMemoryHistory(),
+const router = createRouter({
+  history: createWebHistory(),
   routes,
 });
+
+export default router;

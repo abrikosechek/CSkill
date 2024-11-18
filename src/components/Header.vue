@@ -6,8 +6,8 @@
         <router-link
           v-for="link in pages"
           :key="link.page"
-          class="header__main__links__item"
           :to="link.page"
+          class="header__main__links__item"
         >
           {{ link.text }}
         </router-link>
@@ -25,7 +25,7 @@ import { IconGithubWhite } from "@/icons";
 const pages = [
   {
     text: "Stats",
-    page: "weapon_statistics",
+    page: "/weapon_statistics",
   },
 ];
 </script>

@@ -3,13 +3,14 @@
 
   <div class="content">
     <div class="content__tabs">
-      <ak47 id="ICON" />
+      <WeaponsTab v-for="tab in tabs" :key="tab.category"  v-bind="tab" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ak47 } from "../icons/weapons";
+import { tabs } from "./const";
+import WeaponsTab from "@/components/WeaponsTab";
 </script>
 
 <style scoped lang="scss">
